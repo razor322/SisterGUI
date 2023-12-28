@@ -1,4 +1,3 @@
-// ignore_for_file: prefer_const_constructors
 //gybran nauval yuhandika 2111081006
 import 'dart:convert';
 
