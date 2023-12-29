@@ -6,6 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:sister/const.dart';
 import 'package:sister/mhs/mahasiswa_add.dart';
 import 'package:sister/mhs/mahasiswa_update.dart';
+import 'package:sister/nilai/nilai_mhs.dart';
 
 class MahasiswaList extends StatefulWidget {
   const MahasiswaList({super.key});
@@ -132,11 +133,11 @@ class _MahasiswaList extends State<MahasiswaList> {
                     IconButton(
                         tooltip: "Lihat Nilai",
                         onPressed: () {
-                          // Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //         builder: (context) => NilaiList(
-                          //             listMahasiswa[index]["id"])));
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => NilaiMahasiswa(
+                                      listMahasiswa[index]["id"])));
                         },
                         icon: Icon(
                           // CupertinoIcons.arrowshape_turn_up_right_circle_fill,

@@ -20,13 +20,13 @@ class _NilaiMahasiswaState extends State<NilaiMahasiswa> {
   int id = 0;
   @override
   void initState() {
-    super.initState();
     id = widget.idAll;
     mahasiswaAll();
+    super.initState();
   }
 
   Future<void> mahasiswaAll() async {
-    String urlAll = "http://192.168.56.1:9003/api/v1/nilai/$id";
+    String urlAll = "http://192.168.100.54:9003/api/v1/nilai/$id";
     try {
       var response = await http.get(Uri.parse(urlAll));
       List<dynamic> data = jsonDecode(response.body);
@@ -68,18 +68,18 @@ class _NilaiMahasiswaState extends State<NilaiMahasiswa> {
                   child: ListTile(
                     leading: Icon(
                       Icons.pin_outlined,
-                      color: Colors.green.shade500,
+                      color: Colors.purple,
                       size: 24,
                     ),
                     title: Text(
                       listSemua[index]["mahasiswa"]["nama"],
                       style: TextStyle(
-                          color: Colors.green,
+                          color: Colors.deepPurple,
                           fontSize: 17,
                           fontWeight: FontWeight.bold),
                     ),
                     subtitle: Text(
-                      "Matakuliah : ${listSemua[index]["matakuliah"]["nama"]} \nNilai : ${listSemua[index]["nilai"]["nilai"]}",
+                      "Matakuliah : ${listSemua[index]["matkul"]["nama"]} \nNilai : ${listSemua[index]["nilai"]["nilai"]}",
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 13,
