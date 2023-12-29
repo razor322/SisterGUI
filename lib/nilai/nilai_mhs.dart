@@ -50,6 +50,7 @@ class _NilaiMahasiswaState extends State<NilaiMahasiswa> {
             fontWeight: FontWeight.w500,
           ),
         ),
+        backgroundColor: Colors.purple,
         centerTitle: true,
       ),
       body: listSemua.isEmpty
@@ -63,10 +64,10 @@ class _NilaiMahasiswaState extends State<NilaiMahasiswa> {
               itemCount: listSemua.length,
               itemBuilder: (context, index) {
                 return Card(
-                  margin: EdgeInsets.all(5),
+                  margin: EdgeInsets.all(10),
                   child: ListTile(
                     leading: Icon(
-                      Icons.pin_outlined,
+                      Icons.assignment_ind_rounded,
                       color: Colors.purple,
                       size: 24,
                     ),
