@@ -72,17 +72,17 @@ class _NilaiMahasiswaState extends State<NilaiMahasiswa> {
                       size: 24,
                     ),
                     title: Text(
-                      listSemua[index]["mahasiswa"]["nama"],
+                      listSemua[index]["matkul"]["nama"],
                       style: TextStyle(
                           color: Colors.deepPurple,
                           fontSize: 17,
                           fontWeight: FontWeight.bold),
                     ),
                     subtitle: Text(
-                      "Matakuliah : ${listSemua[index]["matkul"]["nama"]} \nNilai : ${listSemua[index]["nilai"]["nilai"]}",
+                      "Nilai : ${listSemua[index]["nilai"]["nilai"]}",
                       style: TextStyle(
                           color: Colors.black,
-                          fontSize: 13,
+                          fontSize: 16,
                           fontWeight: FontWeight.normal),
                     ),
                   ),

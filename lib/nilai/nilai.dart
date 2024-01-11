@@ -147,7 +147,7 @@ class _NilaiListState extends State<NilaiList> {
                               deleteNilai(listNilai[index]["id"]);
                             },
                             icon: Icon(
-                              Icons.delete,
+                              CupertinoIcons.delete_right,
                               color: Colors.red.shade300,
                               size: 24,
                             )),
@@ -165,7 +165,7 @@ class _NilaiListState extends State<NilaiList> {
                                   .then((value) => allNilai());
                             },
                             icon: Icon(
-                              Icons.edit,
+                              CupertinoIcons.pencil,
                               color: Colors.yellow.shade800,
                               size: 24,
                             )),
@@ -175,6 +175,5 @@ class _NilaiListState extends State<NilaiList> {
                 );
               }),
     );
-    ;
   }
 }

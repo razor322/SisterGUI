@@ -105,9 +105,9 @@ class _InsertNilaiState extends State<InsertNilai> {
       ),
       body: Center(
         child: Container(
-          margin: EdgeInsets.fromLTRB(0, 100, 0, 0),
+          margin: const EdgeInsets.fromLTRB(0, 100, 0, 0),
           width: 800,
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
@@ -125,14 +125,14 @@ class _InsertNilaiState extends State<InsertNilai> {
                 decoration: InputDecoration(
                   labelText: "ID Mahasiswa",
                   hintText: "Pilih Mahasiswa",
-                  prefixIcon: Icon(Icons.person_pin_outlined),
+                  prefixIcon: const Icon(Icons.person_pin_outlined),
                   fillColor: Colors.deepPurple.shade200,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               DropdownButtonFormField(
                 value: null,
                 onChanged: (value) {
@@ -148,27 +148,27 @@ class _InsertNilaiState extends State<InsertNilai> {
                 decoration: InputDecoration(
                   labelText: "ID Matakuliah",
                   hintText: "Pilih Matakuliah",
-                  prefixIcon: Icon(Icons.bookmark_border),
+                  prefixIcon: const Icon(Icons.bookmark_border),
                   fillColor: Colors.deepPurple.shade200,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               TextField(
                 controller: nilai,
                 decoration: InputDecoration(
                   labelText: "Nilai",
                   hintText: "Ketikkan Jumlah Nilai",
-                  prefixIcon: Icon(Icons.numbers_rounded),
+                  prefixIcon: const Icon(Icons.numbers_rounded),
                   fillColor: Colors.deepPurple.shade200,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               SizedBox(
                 height: 50,
                 width: 200,
@@ -179,7 +179,7 @@ class _InsertNilaiState extends State<InsertNilai> {
                   onPressed: () {
                     insertMatakuliah();
                   },
-                  child: Text(
+                  child: const Text(
                     "SIMPAN",
                     style: TextStyle(
                       color: Colors.white,
