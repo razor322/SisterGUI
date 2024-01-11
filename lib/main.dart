@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
             _currentIndex = newIndex;
           });
         },
-        items: [
+        items: const [
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.person,

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:sister/const.dart';
 import 'package:http/http.dart' as http;
+import 'package:sister/main.dart';
 import 'package:sister/mhs/mahasiswa.dart';
 
 class MahasiswaAdd extends StatefulWidget {
@@ -26,8 +27,8 @@ class _MahasiswaAddState extends State<MahasiswaAdd> {
   }
 
   void kirim() {
-    Navigator.push(context,
-        MaterialPageRoute(builder: (context) => const MahasiswaList()));
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const HomePage()));
   }
 
   DateTime tglLahir = DateTime.now();
